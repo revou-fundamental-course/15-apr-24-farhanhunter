@@ -4,7 +4,7 @@ function konversi() {
   document.getElementById("fahrenheit").value = fahrenheit.toFixed(2);
   document.getElementById(
     "calculation-text"
-  ).innerText = `${celsius}°C (9/5) + 32 = ${fahrenheit.toFixed(2)}°F`;
+  ).innerText = `${celsius}°C × 9/5 + 32 = ${fahrenheit.toFixed(2)}°F`;
 }
 
 function reset() {
@@ -19,5 +19,5 @@ function reverse() {
   document.getElementById("celsius").value = celsius.toFixed(2);
   document.getElementById("calculation-text").innerText = `${fahrenheit.toFixed(
     2
-  )}°F - 32 x 5/9 = ${celsius.toFixed(2)}°C`;
+  )}°F - 32) × 5/9 = ${celsius.toFixed(2)}°C`;
 }

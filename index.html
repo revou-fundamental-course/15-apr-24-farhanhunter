@@ -8,22 +8,17 @@
   </head>
   <body>
     <div class="container">
-      <h2>
-        Masukkan suhu derajat Celsius (°C) ke kotak dibawah, lalu klik tombol
-        Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F).
-      </h2>
+      <h1>Konversi Suhu</h1>
       <div class="input-container">
         <label for="celsius">Celsius (°C):</label>
-        <input type="number" id="celsius" value="90" />
-        <div class="button-container">
-          <button onclick="konversi()">Konversi</button>
-          <button onclick="reset()">Reset</button>
-          <button onclick="reverse()">Reverse</button>
-        </div>
+        <input type="number" id="celsius" value="90" class="input-field" />
+        <button onclick="konversi()" class="action-button">Konversi</button>
+        <button onclick="reset()" class="action-button">Reset</button>
+        <button onclick="reverse()" class="action-button">Reverse</button>
       </div>
       <div class="output-container">
         <label for="fahrenheit">Fahrenheit (°F):</label>
-        <input type="number" id="fahrenheit" readonly />
+        <input type="number" id="fahrenheit" readonly class="input-field" />
       </div>
       <div class="calculation">
         <h3>Cara Kalkulasi:</h3>
